@@ -1,0 +1,49 @@
+<!-- employee.jsp -->
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Employee Registration</title>
+</head>
+<body>
+
+<h1>Employee Registration Form</h1>
+
+<form action="saveemployee" method="post">
+
+    Employee ID:
+    <input type="text" name="id"><br><br>
+
+    Full Name:
+    <input type="text" name="name"><br><br>
+
+    Email:
+    <input type="email" name="email"><br><br>
+
+    Mobile Number:
+    <input type="text" name="number"><br><br>
+
+    Department:
+    <select name="department">
+        <option>HR</option>
+        <option>IT</option>
+        <option>Finance</option>
+        <option>Sales</option>
+    </select>
+    <br><br>
+
+    Gender:
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <br><br>
+
+    Address:<br>
+    <textarea name="address"></textarea>
+    <br><br>
+
+    <input type="submit" value="Register">
+
+</form>
+
+</body>
+</html>
