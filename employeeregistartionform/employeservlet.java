@@ -37,7 +37,7 @@ public class SaveEmployeeServlet extends HttpServlet {
             PreparedStatement ps = con.prepareStatement(
                 "insert into employee values(?,?,?,?,?,?,?)");
 
-            ps.setInt(1, Integer.parseInt(id));
+            ps.setInt(1, id);
             ps.setString(2, name);
             ps.setString(3, email);
             ps.setString(4, number);
